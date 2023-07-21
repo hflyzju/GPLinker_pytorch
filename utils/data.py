@@ -80,6 +80,8 @@ def get_dataloader_and_dataset(
 ):
 
     ds = load_dataset("./data/spo.py", cache_dir=args.cache_dir)
+    # data_files = {'train': './data/train.json', 'validation': './data/valid.json'}
+    # ds = load_dataset("yanbao", data_files=data_files)
     trains_ds = process_train(ds["train"], predicate2id=predicate2id)
     devs_ds = ds["validation"].map(process_dev)
 
