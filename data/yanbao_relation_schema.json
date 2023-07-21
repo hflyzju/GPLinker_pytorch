@@ -1,0 +1,12 @@
+{"object_type": "机构", "predicate": "投资（机构）", "subject_type": "机构", "des": "投资者向被投资机构提供资金，以获取一定的权益或收益。"}
+{"object_type": "品牌", "predicate": "拥有（品牌）", "subject_type": "机构", "des": "机构拥有某个品牌，具有该品牌的使用权和控制权。"}
+{"object_type": "机构或行业", "predicate": "隶属于 （机构/行业）", "subject_type": "机构或行业", "des": "一个机构或行业隶属于另一个机构或行业，受其控制或影响。"}
+{"object_type": "机构", "predicate": "客户", "subject_type": "机构", "des": "机构作为客户购买或使用其他机构提供的产品或服务。"}
+{"object_type": "文章", "predicate": "发布（文章）", "subject_type": "机构", "des": "机构发布文章，包括新闻、报道、评论等，以传达信息或观点。"}
+{"object_type": "机构", "predicate": "就职于（机构）", "subject_type": "人物", "des": "人物在某个机构工作或就职，为该机构提供劳动力和专业知识。"}
+{"object_type": "产品", "predicate": "采购（产品)", "subject_type": "机构", "des": "机构采购某些产品，以供自身使用或销售给其他客户。"}
+{"object_type": "产品", "predicate": "生产/销售（产品）", "subject_type": "机构", "des": "机构生产或销售某些产品，以获取收益或提供服务。"}
+{"object_type": "数值", "predicate": "（指标）增加", "subject_type": "指标", "des": "指标数值增加，即该指标所代表的事物数量或价值增加。"}
+{"object_type": "数值", "predicate": "（指标）下降", "subject_type": "指标", "des": "指标数值下降，即该指标所代表的事物数量或价值下降。"}
+{"object_type": "发布时间", "predicate": "（研报/文章）发布时间", "subject_type": "研报或文章", "des": "研报或文章发布的时间或日期，指该研报或文章正式发布的时间或日期。"}
+{"object_type": "业务", "predicate": "开展（业务）", "subject_type": "机构", "des": "表示一个机构开始进行某项业务或活动."}
