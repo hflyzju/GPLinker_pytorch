@@ -90,7 +90,7 @@ class SPO(datasets.GeneratorBasedBuilder):
                 name=datasets.Split.TRAIN,
                 # These kwargs will be passed to _generate_examples
                 gen_kwargs={
-                    "filepath": os.path.join(data_dir, "train_spo.json"),
+                    "filepath": os.path.join(data_dir, "test_spo.json"),
                     "split": "train",
                 },
             ),
