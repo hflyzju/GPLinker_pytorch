@@ -60,7 +60,7 @@ class DummpyDataset(Dataset):
 def fire(args):
     predicate2id = {}
     id2predicate = {}
-    with open("data/all_50_schemas", "r", encoding="utf-8") as f:
+    with open("data/yanbao/relation_schema.json", "r", encoding="utf-8") as f:
         for l in f:
             l = json.loads(l)
             if l["predicate"] not in predicate2id:
