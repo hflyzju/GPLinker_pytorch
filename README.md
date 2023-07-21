@@ -1,5 +1,6 @@
 # GPLinker_pytorch
 GPLinker_pytorch
+https://colab.research.google.com/drive/1Q2--jK6Zv_-qKv_FzoEPOIIddMw-H-WF#scrollTo=H1fcugmqdVxv
 
 # 介绍
 这是pytorch版本的`GPLinker`代码以及`TPLinker_Plus`代码。
