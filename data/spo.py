@@ -90,7 +90,7 @@ class SPO(datasets.GeneratorBasedBuilder):
                 name=datasets.Split.TRAIN,
                 # These kwargs will be passed to _generate_examples
                 gen_kwargs={
-                    "filepath": os.path.join(data_dir, "train.json"),
+                    "filepath": os.path.join(data_dir, "train_spo.json"),
                     "split": "train",
                 },
             ),
@@ -98,12 +98,12 @@ class SPO(datasets.GeneratorBasedBuilder):
                 name=datasets.Split.VALIDATION,
                 # These kwargs will be passed to _generate_examples
                 gen_kwargs={
-                    "filepath": os.path.join(data_dir, "valid.json"),
+                    "filepath": os.path.join(data_dir, "valid_spo.json"),
                     "split": "dev",
                 },
             ),
         ]
-        test_file = os.path.join(data_dir, "test.json")
+        test_file = os.path.join(data_dir, "test_spo.json")
         if os.path.exists(test_file):
             outputs.append(
                 datasets.SplitGenerator(
