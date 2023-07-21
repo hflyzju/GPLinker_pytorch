@@ -12,7 +12,7 @@ accelerate launch train.py \
     --seed 42 \
     --save_steps 10804 \
     --output_dir ./outputs \
-    --max_length 128 \
+    --max_length 512 \
     --topk 1 \
     --num_workers 6 \
     --model_cache_dir /mnt/f/hf/models
