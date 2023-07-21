@@ -158,18 +158,19 @@ def fire(args):
 
 
 if __name__ == "__main__":
-    debug = True
-    use_gpu = False
+    debug = False
+    use_gpu = True
+    model_path = '/content/drive/MyDrive/cmp/cmp1/gplinker_pytorch_output/bert-bert-base-chinese/ckpt/step-5240-spo-f1-0.031344183243034195/'
     args = Config(
         debug=debug,
         model_type="bert",
         method="gplinker",
-        batch_size=32,
-        max_length=128,
+        batch_size=4,
+        max_length=512,
         num_workers=6,
-        in_file="data/dev_data.json",
-        out_file="preds.json" if not debug else "debug.json",
-        model_path="outputs/bert-hfl_chinese-roberta-wwm-ext/ckpt/step-10804-spo-f1-0.81283402101807955",
+        in_file="data/yanbao/test_spo.json",
+        out_file="test_preds.json" if not debug else "debug.json",
+        model_path=model_path,
         device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         if use_gpu
         else "cpu",
