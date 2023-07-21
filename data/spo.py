@@ -83,7 +83,8 @@ class SPO(datasets.GeneratorBasedBuilder):
         # my_urls = _URLs[self.config.name]
 
         # data_dir = dl_manager.download_and_extract(my_urls)
-        data_dir = "/content/GPLinker_pytorch/data/yanbao/"
+        # data_dir = "/content/GPLinker_pytorch/data/yanbao/"
+        data_dir = '/kaggle/working/GPLinker_pytorch/data/yanbao/'
 
         outputs = [
             datasets.SplitGenerator(
