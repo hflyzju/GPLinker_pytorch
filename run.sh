@@ -7,8 +7,8 @@ accelerate launch train.py \
     --learning_rate 3e-5 \
     --num_warmup_steps_or_radios 0.1 \
     --gradient_accumulation_steps 1 \
-    --per_device_train_batch_size 16 \
-    --per_device_eval_batch_size 32 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 8 \
     --seed 42 \
     --save_steps 10804 \
     --output_dir ./outputs \
