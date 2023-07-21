@@ -160,11 +160,17 @@ def fire(args):
 if __name__ == "__main__":
     debug = False
     use_gpu = True
-    model_path = '/content/drive/MyDrive/cmp/cmp1/gplinker_pytorch_output/bert-bert-base-chinese/ckpt/step-5240-spo-f1-0.031344183243034195/'
+    # model_path = '/content/drive/MyDrive/cmp/cmp1/gplinker_pytorch_output/bert-bert-base-chinese/ckpt/step-5240-spo-f1-0.031344183243034195/'
+    import os
+    ckpt_dirs = os.listdir('./outputs/bert-bert-base-chinese/ckpt/')
+    ckpt_dirs.sort()
+    model_path = './outputs/bert-bert-base-chinese/ckpt/' + ckpt_dirs[-1]
+    print("model_path:", model_path)
+
     args = Config(
         debug=debug,
         model_type="bert",
-        method="gplinker",
+        method="tplinker_plus",
         batch_size=4,
         max_length=512,
         num_workers=6,
