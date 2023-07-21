@@ -16,3 +16,5 @@ accelerate launch train.py \
     --topk 1 \
     --num_workers 6 \
     --model_cache_dir /mnt/f/hf/models
+
+python evaluate.py
